@@ -5,8 +5,8 @@
 class Hwaro < Formula
   desc "() is a lightweight and fast static site generator(ssg) written in cryst"
   homepage "https://github.com/hahwul/hwaro"
-  url "https://github.com/hahwul/hwaro/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "84bf97e0cc283c458d2e6b955d9a2d52d5358d36e783300a087327cfcb83b9cd"
+  url "https://github.com/hahwul/hwaro/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "6c0c0757c8b41c9390df64c95194b3e201fc83671908c473f3b754f797119123"
   license "MIT"
 
   depends_on "crystal"
