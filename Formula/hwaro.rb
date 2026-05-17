@@ -5,15 +5,15 @@
 class Hwaro < Formula
   desc "() is a lightweight and fast static site generator(ssg) written in cryst"
   homepage "https://github.com/hahwul/hwaro"
-  url "https://github.com/hahwul/hwaro/archive/refs/tags/v0.13.1.tar.gz"
-  sha256 "69fa1f7fd0cd69420b6d5833aa985509abd4b56565a6cabb28163224c2fb995d"
+  url "https://github.com/hahwul/hwaro/archive/refs/tags/v0.14.0.tar.gz"
+  sha256 "73a4cd236794c0528f4b22230547e8b52dc0d94b52dca999f98068d5beb4da14"
   license "MIT"
 
   depends_on "crystal"
 
   def install
     system "shards install"
-    system "shards build --release --no-debug --production"
+    system "shards build --release --no-debug --production -Dpreview_mt"
     bin.install "bin/hwaro"
   end
 
