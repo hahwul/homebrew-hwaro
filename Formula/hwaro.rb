@@ -6,7 +6,7 @@
 class Hwaro < Formula
   desc "Lightweight and fast static site generator (SSG) written in Crystal"
   homepage "https://github.com/hahwul/hwaro"
-  version "0.15.3"
+  version "0.16.0"
   license "MIT"
 
   on_macos do
@@ -15,29 +15,29 @@ class Hwaro < Formula
     depends_on "openssl@3"
 
     on_arm do
-      url "https://github.com/hahwul/hwaro/releases/download/v0.15.3/hwaro-v0.15.3-osx-arm64"
-      sha256 "d0a4ac12605d16194d7cd1c87c89f50b96a627f377512edad668ad500813cc6a"
+      url "https://github.com/hahwul/hwaro/releases/download/v0.16.0/hwaro-v0.16.0-osx-arm64"
+      sha256 "e1d52a6973f92709019001451df860f8b25e9ba3cb537e60c86d1cb401fba16d"
     end
     on_intel do
-      url "https://github.com/hahwul/hwaro/releases/download/v0.15.3/hwaro-v0.15.3-osx-x86_64"
-      sha256 "59fecb7f9666cd4782c101fe439c1584f50eb393c279e1e23c892f12e00f412b"
+      url "https://github.com/hahwul/hwaro/releases/download/v0.16.0/hwaro-v0.16.0-osx-x86_64"
+      sha256 "10ff276f0947bda2ad276ad985369b1c0f5dc4ab79fd1851e95899d8750c66c3"
     end
   end
 
   on_linux do
     # Linux release binaries are statically linked (musl), so they are self-contained.
     on_arm do
-      url "https://github.com/hahwul/hwaro/releases/download/v0.15.3/hwaro-v0.15.3-linux-arm64"
-      sha256 "c5505f9d8716f0dfb55eba8d52d7aa1338503216bdd4112f5171298bc4d50070"
+      url "https://github.com/hahwul/hwaro/releases/download/v0.16.0/hwaro-v0.16.0-linux-arm64"
+      sha256 "c56d64ef028466086a087441ec417182ac3d5069d1befa3b0360ee1f8bc7f273"
     end
     on_intel do
-      url "https://github.com/hahwul/hwaro/releases/download/v0.15.3/hwaro-v0.15.3-linux-x86_64"
-      sha256 "383b23d9e4f7f519b14efcbdfc529009813ba6309bc4f9d8bcf97c6c4926a3ab"
+      url "https://github.com/hahwul/hwaro/releases/download/v0.16.0/hwaro-v0.16.0-linux-x86_64"
+      sha256 "301ff7bd165735d069f70564fcdaa5ce74933fef5dfcdfd91e474ba757f87127"
     end
   end
 
   def install
-    bin.install Dir["hwaro-v0.15.3-*"].first => "hwaro"
+    bin.install Dir["hwaro-v0.16.0-*"].first => "hwaro"
   end
 
   test do
