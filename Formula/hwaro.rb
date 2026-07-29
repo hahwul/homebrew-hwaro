@@ -6,7 +6,7 @@
 class Hwaro < Formula
   desc "Lightweight and fast static site generator (SSG) written in Crystal"
   homepage "https://github.com/hahwul/hwaro"
-  version "0.18.0"
+  version "0.18.1"
   license "MIT"
 
   on_macos do
@@ -14,24 +14,24 @@ class Hwaro < Formula
     # every Homebrew-linked dylib (OpenSSL and its deps) next to the binary and
     # rewrites load paths to @executable_path/lib, so no brew dependency is needed.
     on_arm do
-      url "https://github.com/hahwul/hwaro/releases/download/v0.18.0/hwaro-v0.18.0-osx-arm64.tar.gz"
-      sha256 "16135a06bcd75408f15d695e435e743da154f57a8c58b33a153e1c6400993b68"
+      url "https://github.com/hahwul/hwaro/releases/download/v0.18.1/hwaro-v0.18.1-osx-arm64.tar.gz"
+      sha256 "fa06f033ced347cd043948ef0d481d1fe0bda8bcf418c364556ba7a04e86d3bf"
     end
     on_intel do
-      url "https://github.com/hahwul/hwaro/releases/download/v0.18.0/hwaro-v0.18.0-osx-x86_64.tar.gz"
-      sha256 "1c8c1bd239b9ec967c4689847c92b2f094eb9a006b855784dd1adec3cfd532fa"
+      url "https://github.com/hahwul/hwaro/releases/download/v0.18.1/hwaro-v0.18.1-osx-x86_64.tar.gz"
+      sha256 "a687c98a95ae249795a0603958adb3e94789450d11098488a296869af53cc7ef"
     end
   end
 
   on_linux do
     # Linux release binaries are statically linked (musl), so they are self-contained.
     on_arm do
-      url "https://github.com/hahwul/hwaro/releases/download/v0.18.0/hwaro-v0.18.0-linux-arm64"
-      sha256 "3b05a18b72dd8633a33a3204c1b23c513e76fa1da89aa43ea8d3efd1dab78c29"
+      url "https://github.com/hahwul/hwaro/releases/download/v0.18.1/hwaro-v0.18.1-linux-arm64"
+      sha256 "34e7d87e2555a697a87d1423418f926781380e2e3bf57efe96e0951e23ad8227"
     end
     on_intel do
-      url "https://github.com/hahwul/hwaro/releases/download/v0.18.0/hwaro-v0.18.0-linux-x86_64"
-      sha256 "530fea168771503a4f4a4bd1f3c440a98434ba56ca78f681202d6ebda5efd410"
+      url "https://github.com/hahwul/hwaro/releases/download/v0.18.1/hwaro-v0.18.1-linux-x86_64"
+      sha256 "f88254a07cee4aa9d50c50836c523b034beb20f62cb5da21a6125ac214d992d8"
     end
   end
 
