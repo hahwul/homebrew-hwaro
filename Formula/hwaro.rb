@@ -6,7 +6,7 @@
 class Hwaro < Formula
   desc "Lightweight and fast static site generator (SSG) written in Crystal"
   homepage "https://github.com/hahwul/hwaro"
-  version "0.22.0"
+  version "0.22.1"
   license "MIT"
 
   on_macos do
@@ -14,24 +14,24 @@ class Hwaro < Formula
     # every Homebrew-linked dylib (OpenSSL and its deps) next to the binary and
     # rewrites load paths to @executable_path/lib, so no brew dependency is needed.
     on_arm do
-      url "https://github.com/hahwul/hwaro/releases/download/v0.22.0/hwaro-v0.22.0-osx-arm64.tar.gz"
-      sha256 "fd74eae1e8d7f65a3cb7511a0ad9f7769bc28d1be2aabf9649e256b2994e8946"
+      url "https://github.com/hahwul/hwaro/releases/download/v0.22.1/hwaro-v0.22.1-osx-arm64.tar.gz"
+      sha256 "03e85f7dc171716c32c570810176fd87c3b9349f5f8910c8f3e0f71bb0f6d5a0"
     end
     on_intel do
-      url "https://github.com/hahwul/hwaro/releases/download/v0.22.0/hwaro-v0.22.0-osx-x86_64.tar.gz"
-      sha256 "c23b08137e772c3804772cf328e9db87f8d3e2167ced3b07ca1f3a89e72b03ea"
+      url "https://github.com/hahwul/hwaro/releases/download/v0.22.1/hwaro-v0.22.1-osx-x86_64.tar.gz"
+      sha256 "f4dba814f13ca6fcf35a069f9ec3c967aba8b2127e552ffe3738d1e9b7ced769"
     end
   end
 
   on_linux do
     # Linux release binaries are statically linked (musl), so they are self-contained.
     on_arm do
-      url "https://github.com/hahwul/hwaro/releases/download/v0.22.0/hwaro-v0.22.0-linux-arm64"
-      sha256 "78d99c133f31ee28353ad9f753370e7193727c16cbf8e86d18ca0e8fb5d0a8d1"
+      url "https://github.com/hahwul/hwaro/releases/download/v0.22.1/hwaro-v0.22.1-linux-arm64"
+      sha256 "f1581da8077025d485b8628eb9211d134ea6f9eca1ac6496ed016d6f722ec262"
     end
     on_intel do
-      url "https://github.com/hahwul/hwaro/releases/download/v0.22.0/hwaro-v0.22.0-linux-x86_64"
-      sha256 "3ed4bae9cdc9c171887c11eb9ad36661a574e65f34145a6539a593fcdb1f4075"
+      url "https://github.com/hahwul/hwaro/releases/download/v0.22.1/hwaro-v0.22.1-linux-x86_64"
+      sha256 "64f047f1e43cdda3d96f0699d79d2beb3dbf177b89846406132e72da96e18371"
     end
   end
 
